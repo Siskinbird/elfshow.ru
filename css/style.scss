@@ -1,10 +1,18 @@
 @import url('/css/normalize.css');
 body {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Amatic SC', cursive;
+    color: #fff;
+}
+h2 {
+    text-transform: uppercase;
+    font-size: 42px;
+    text-align: center;
+    letter-spacing: 5px;
+    margin-top: 90px;
 }
 .wrapper{
     max-width: 100%;
-    height: 100vh;
+    height: 100%;
     background-color: rgba(25, 1, 32, 1);
 }
 
@@ -16,7 +24,7 @@ body {
 
 .header {
     max-width: 100%;
-    height: 90px;
+    height: 110px;
     background-color: #0A0804;
     
 }
@@ -33,7 +41,7 @@ body {
     }
     .link a {
         text-decoration: none;
-        font-size: 24px;
+        font-size: 42px;
         color: #fff;
         text-transform: uppercase;
         border-bottom: 2px solid #fff;
@@ -73,3 +81,4 @@ body {
         z-index: 2;
     }
 }
+

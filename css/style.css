@@ -96,9 +96,6 @@ p {
 }
 
 /* CHARACTERS */
-/* .characters, .interactive {
-
-} */
 .characters__body, .interactive__body, .dancing__body {
   position: relative;
   display: flex;
@@ -140,16 +137,3 @@ p {
 .character__body-timing p, .interactive__body-timing p, .dancing__body-timing p {
   padding: 56px 56px;
 }
-
-/* .interactive{
-
-}
-
-.interactive__body {
-}
-.driada-img {
-}
-.interactive__body-description {
-}
-.interactive__body-timing {
-} */

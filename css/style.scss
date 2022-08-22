@@ -46,6 +46,11 @@ $breakpoints: (
     padding: 20px;
 }
 
+.main-box.container {
+    margin-top: 60px;
+    background: url('../assets/img/main_border.svg')  0 0/100% 100% no-repeat;
+}
+
 /* Header & Nav */
 
 .header {
@@ -115,6 +120,9 @@ $breakpoints: (
 /* CHARACTERS */
 
 %card-body {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 75%;
     position: relative;
     display: flex;
     border: 3px solid #d9d9d9;

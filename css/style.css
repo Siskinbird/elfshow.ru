@@ -1,3 +1,4 @@
+/* ROOTS */
 @import url("./normalize.css");
 html {
   scroll-behavior: smooth;
@@ -39,6 +40,12 @@ p {
   padding: 20px;
 }
 
+.main-box.container {
+  margin-top: 60px;
+  background: url("../assets/img/main_border.svg") 0 0/100% 100% no-repeat;
+}
+
+/* Header & Nav */
 .header {
   max-width: 100%;
   height: 110px;
@@ -68,6 +75,7 @@ p {
   border-bottom: 0px solid rgb(143, 36, 176);
 }
 
+/* Video block */
 .video {
   position: relative;
   padding-bottom: 56.25%;
@@ -103,6 +111,9 @@ p {
 
 /* CHARACTERS */
 .dancing__body, .interactive__body, .characters__body {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 75%;
   position: relative;
   display: flex;
   border: 3px solid #d9d9d9;
@@ -142,4 +153,19 @@ p {
 }
 .dancing__body-timing p, .interactive__body-timing p, .character__body-timing p {
   padding: 56px 56px;
+}
+
+/* FOOTER */
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+/* .contacts {
+} */
+.whats-up img {
+  width: 100px;
+  height: 100px;
+  cursor: pointer;
 }

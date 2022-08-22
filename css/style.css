@@ -86,6 +86,8 @@ p {
   max-height: 70vh;
   overflow: hidden;
   position: relative;
+  background: url("./assets/img/cover.png") center no-repeat;
+  background-size: cover;
 }
 .intro::after {
   content: "";

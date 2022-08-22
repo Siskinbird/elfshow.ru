@@ -1,3 +1,4 @@
+/* ROOTS */
 @import url('./normalize.css');
 
 html {
@@ -45,6 +46,8 @@ $breakpoints: (
     padding: 20px;
 }
 
+/* Header & Nav */
+
 .header {
     max-width: 100%;
     height: 110px;
@@ -75,6 +78,8 @@ $breakpoints: (
         }
     }
 }
+
+/* Video block */
 
 .video {
     position: relative;
@@ -197,4 +202,20 @@ $breakpoints: (
     @extend %card-timing;
 }
 
+/* FOOTER */
 
+.footer {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+
+}
+/* .contacts {
+} */
+.whats-up {
+    img {
+        width: 100px;
+        height: 100px;
+        cursor: pointer;
+    }
+}

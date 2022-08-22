@@ -32,9 +32,9 @@
         </section>
         <section class="main">
         <div class="main-box container">
-            <div class="characters" id="characters">
+            <div class="characters">
                 <h2>Персонажи</h2>
-                <div class="characters__body">
+                <div class="characters__body" data-aos="fade-right" data-aos-duration="2000">
                     <img src="/assets/img/driada_7.svg" class="driada-img"></img>
                     <div class="character__body-description">
                         <h3>Дриада</h3>
@@ -47,7 +47,7 @@
                 </div>
             </div>
             <div class="characters">
-                <div class="characters__body">
+                <div class="characters__body" data-aos="fade-left" data-aos-duration="2000">
                     <img src="/assets/img/elf_6.svg" class="driada-img"></img>
                     <div class="character__body-description">
                         <h3>Эльф</h3>
@@ -61,7 +61,7 @@
             </div>
             <div class="interactive" id="interactive">
                 <h2>Интерактив</h2>
-                <div class="interactive__body">
+                <div class="interactive__body" data-aos="zoom-in" data-aos-duration="2000">
                     <img src="/assets/img/interactive_border.svg" class="elf-img"></img>
                     <div class="interactive__body-description">
                         <h3>Мыльные пузыри</h3>
@@ -74,7 +74,7 @@
                 </div>
             </div>
             <div class="interactive">
-                <div class="interactive__body">
+                <div class="interactive__body" data-aos="zoom-in" data-aos-duration="2000">
                     <img src="/assets/img/interactive_border.svg" class="elf-img"></img>
                     <div class="interactive__body-description">
                         <h3>Мыльные пузыри</h3>
@@ -88,7 +88,7 @@
             </div>
             <div class="dancing" id="dancing">
                 <h2>Танцевальные программы</h2>
-                <div class="dancing__body">
+                <div class="dancing__body" data-aos="flip-left" data-aos-duration="2000">
                     <img src="/assets/img/dance_1.svg" class="dancing-img"></img>
                     <div class="dancing__body-description">
                         <h3>Эльфийская сказка</h3>
@@ -99,7 +99,7 @@
                         <p>3 танца, 3 артиста<br>12 минут</p>
                     </div>                    
                 </div>
-                <div class="dancing__body">
+                <div class="dancing__body" data-aos="flip-right" data-aos-duration="2000">
                     <img src="/assets/img/dance_2.svg" class="dancing-img"></img>
                     <div class="dancing__body-description">
                         <h3>Трио эльфы в лесу</h3>
@@ -110,7 +110,7 @@
                         <p>3 артиста<br> 5 мин</p>
                     </div>                    
                 </div>
-                <div class="dancing__body">
+                <div class="dancing__body" data-aos="flip-left" data-aos-duration="2000">
                     <img src="/assets/img/driada_7.svg" class="dancing-img"></img>
                     <div class="dancing__body-description">
                         <h3>Соло дриады</h3>
@@ -121,7 +121,7 @@
                         <p>1 артист <br>3 минуты</p>
                     </div>                    
                 </div>
-                <div class="dancing__body">
+                <div class="dancing__body" data-aos="flip-right" data-aos-duration="2000">
                     <img src="/assets/img/elf_6.svg" class="dancing-img"></img>
                     <div class="dancing__body-description">
                         <h3>Соло эльфа</h3>
@@ -132,7 +132,7 @@
                         <p>1 артист <br>2 минуты</p>
                     </div>                    
                 </div>
-                <div class="dancing__body">
+                <div class="dancing__body" data-aos="flip-left" data-aos-duration="2000">
                     <img src="/assets/img/dance3.svg" class="dancing-img"></img>
                     <div class="dancing__body-description">
                         <h3>Дуэт сестер-эльфиек</h3>
@@ -147,6 +147,9 @@
         </div>
         </section>    
     </div>
-
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 </html>

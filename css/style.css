@@ -16,17 +16,48 @@ h2 {
   letter-spacing: 5px;
   margin-bottom: 116px;
 }
+@media (max-width: 658px) {
+  h2 {
+    margin-bottom: 30px;
+  }
+}
 
 h3 {
   font-size: 36px;
   margin: 0;
+}
+@media (max-width: 930px) {
+  h3 {
+    font-size: 24px;
+  }
+}
+@media (max-width: 527px) {
+  h3 {
+    font-size: 22px;
+  }
 }
 
 p {
   font-size: 30px;
   margin: 0;
 }
+@media (max-width: 930px) {
+  p {
+    font-size: 20px;
+  }
+}
+@media (max-width: 527px) {
+  p {
+    font-size: 16px;
+  }
+}
 
+/* $breakpoints: (
+  breakpoint-mobile: 360px,
+  breakpoint-tablet: 768px,
+  breakpoint-medium: 992px,
+  breakpoint-large: 1200px
+); */
 .wrapper {
   max-width: 100%;
   height: 100%;
@@ -171,6 +202,11 @@ p {
   flex-direction: column;
   gap: 50px;
 }
+@media (max-width: 658px) {
+  .characters, .interactives, .dancings {
+    gap: 0;
+  }
+}
 
 .dancing__body, .interactive__body, .character__body {
   margin-left: auto;
@@ -184,10 +220,20 @@ p {
   gap: 20px;
   margin-bottom: 110px;
 }
+@media (max-width: 658px) {
+  .dancing__body, .interactive__body, .character__body {
+    margin-bottom: 30px;
+  }
+}
+@media (max-width: 527px) {
+  .dancing__body, .interactive__body, .character__body {
+    gap: 5px;
+  }
+}
 
 .dancing-img, .elf-img, .driada-img {
   position: absolute;
-  top: -37%;
+  top: -50%;
   left: 37%;
   z-index: 22;
   max-width: 290px;
@@ -196,6 +242,19 @@ p {
 }
 .dancing-img:hover, .elf-img:hover, .driada-img:hover {
   transform: scale(110%);
+}
+@media (max-width: 930px) {
+  .dancing-img, .elf-img, .driada-img {
+    max-width: 225px;
+  }
+}
+@media (max-width: 658px) {
+  .dancing-img, .elf-img, .driada-img {
+    max-width: 94px;
+    position: relative;
+    top: 0;
+    left: 0;
+  }
 }
 
 .dancing__body-description, .interactive__body-description, .character__body-description {
@@ -220,12 +279,12 @@ p {
   align-items: center;
   justify-content: flex-end;
   background: linear-gradient(90deg, rgb(25, 1, 32), rgb(40, 82, 76));
+  padding-bottom: 35px;
 }
 
 /* .contacts {
 } */
 .whats-up img {
-  width: 100px;
-  height: 100px;
+  width: 228px;
   cursor: pointer;
 }

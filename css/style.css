@@ -91,7 +91,7 @@ p {
 }
 .intro::after {
   content: "";
-  display: block;
+  display: body;
   background-color: rgba(0, 0, 0, 0.3);
   position: absolute;
   top: 0;
@@ -102,7 +102,7 @@ p {
 }
 
 /* CHARACTERS */
-.characters__body, .interactive__body, .dancing__body {
+.dancing__body, .interactive__body, .characters__body {
   position: relative;
   display: flex;
   border: 3px solid #d9d9d9;
@@ -113,7 +113,7 @@ p {
   margin-bottom: 160px;
 }
 
-.driada-img, .elf-img, .dancing-img {
+.dancing-img, .elf-img, .driada-img {
   position: absolute;
   top: -28%;
   left: 36%;
@@ -123,23 +123,23 @@ p {
   transition: all ease-in-out 0.4s;
   cursor: pointer;
 }
-.driada-img:hover, .elf-img:hover, .dancing-img:hover {
+.dancing-img:hover, .elf-img:hover, .driada-img:hover {
   transform: scale(110%);
 }
 
-.character__body-description, .interactive__body-description, .dancing__body-description {
+.dancing__body-description, .interactive__body-description, .character__body-description {
   flex: 65%;
   padding: 20px;
   border: 1px solid #d9d9d9;
 }
 
-.character__body-timing, .interactive__body-timing, .dancing__body-timing {
+.dancing__body-timing, .interactive__body-timing, .character__body-timing {
   flex: 35%;
   text-align: center;
   justify-content: center;
   padding: 20px;
   border: 1px solid #d9d9d9;
 }
-.character__body-timing p, .interactive__body-timing p, .dancing__body-timing p {
+.dancing__body-timing p, .interactive__body-timing p, .character__body-timing p {
   padding: 56px 56px;
 }

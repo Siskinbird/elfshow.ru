@@ -19,7 +19,7 @@
             <nav class="nav container">
                 <ul class="nav-links">
                     <li class="link"><a href="#characters">Персонажи</a></li>
-                    <li class="link"><a href="#interactive">Интерактив</a></li>
+                    <li class="link"><a href="#interactives">Интерактив</a></li>
                     <li class="link"><a href="#dancing">Танцевальные программы</a></li>
                     <li class="link"><a href="#contacts">Контакты</a></li>
                </ul>                
@@ -34,34 +34,37 @@
         </section>
         <section class="main container">
         <div class="main-box">
-            <div class="characters" id="characters">
-                <h2>Персонажи</h2>
-                <div class="characters__body" data-aos="fade-right" data-aos-duration="2000">
-                    <img src="./assets/img/driada_7.svg" class="driada-img"></img>
-                    <div class="character__body-description">
-                        <h3>Дриада</h3>
-                        <p>первый час 8 000,00 руб</p>
-                        <p>последующие часы 5 000,00 руб.час</p>
-                    </div>
-                    <div class="character__body-timing">
-                        <p>1 артист <br> от 1 часа</p>
-                    </div>
-                </div>
-            </div>
-            <div class="characters">
-                <div class="characters__body" data-aos="fade-left" data-aos-duration="2000">
-                    <img src="./assets/img/elf_6.svg" class="driada-img"></img>
-                    <div class="character__body-description">
-                        <h3>Эльф</h3>
-                        <p>первый час 8 000,00 руб</p>
-                        <p>последующие часы 4 000,00 руб.час</p>
-                    </div>
-                    <div class="character__body-timing">
-                        <p>1 артист <br> от 1 часа</p>
+            <section class="characters" id="characters">
+                <div class="character">
+                    <h2>Персонажи</h2>
+                    <div class="character__body" data-aos="fade-right" data-aos-duration="2000">
+                        <img src="./assets/img/driada_7.svg" class="driada-img"></img>
+                        <div class="character__body-description">
+                            <h3>Дриада</h3>
+                            <p>первый час 8 000,00 руб</p>
+                            <p>последующие часы 5 000,00 руб.час</p>
+                        </div>
+                        <div class="character__body-timing">
+                            <p>1 артист <br> от 1 часа</p>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="interactive" id="interactive">
+                <div class="character">
+                    <div class="character__body" data-aos="fade-left" data-aos-duration="2000">
+                        <img src="./assets/img/elf_6.svg" class="driada-img"></img>
+                        <div class="character__body-description">
+                            <h3>Эльф</h3>
+                            <p>первый час 8 000,00 руб</p>
+                            <p>последующие часы 4 000,00 руб.час</p>
+                        </div>
+                        <div class="character__body-timing">
+                            <p>1 артист <br> от 1 часа</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="interactives" id="interactives">
+            <div class="interactive">
                 <h2>Интерактив</h2>
                 <div class="interactive__body" data-aos="zoom-in" data-aos-duration="2000">
                     <img src="./assets/img/interactive_border.svg" class="elf-img"></img>
@@ -88,7 +91,9 @@
                     </div>
                 </div>
             </div>
-            <div class="dancing" id="dancing">
+            </section>
+            <section class="dancings" id="dancings">
+            <div class="dancing">
                 <h2>Танцевальные программы</h2>
                 <div class="dancing__body" data-aos="flip-left" data-aos-duration="2000">
                     <img src="./assets/img/dance_1.svg" class="dancing-img"></img>
@@ -101,6 +106,8 @@
                         <p>3 танца, 3 артиста<br>12 минут</p>
                     </div>                    
                 </div>
+                </div>
+                <div class="dancing">
                 <div class="dancing__body" data-aos="flip-right" data-aos-duration="2000">
                     <img src="./assets/img/dance_2.svg" class="dancing-img"></img>
                     <div class="dancing__body-description">
@@ -112,6 +119,8 @@
                         <p>3 артиста<br> 5 мин</p>
                     </div>                    
                 </div>
+                </div>
+                <div class="dancing">
                 <div class="dancing__body" data-aos="flip-left" data-aos-duration="2000">
                     <img src="./assets/img/driada_7.svg" class="dancing-img"></img>
                     <div class="dancing__body-description">
@@ -123,6 +132,8 @@
                         <p>1 артист <br>3 минуты</p>
                     </div>                    
                 </div>
+                </div>
+                <div class="dancing">
                 <div class="dancing__body" data-aos="flip-right" data-aos-duration="2000">
                     <img src="./assets/img/elf_6.svg" class="dancing-img"></img>
                     <div class="dancing__body-description">
@@ -134,6 +145,8 @@
                         <p>1 артист <br>2 минуты</p>
                     </div>                    
                 </div>
+                </div>
+                <div class="dancing">
                 <div class="dancing__body" data-aos="flip-left" data-aos-duration="2000">
                     <img src="./assets/img/dance3.svg" class="dancing-img"></img>
                     <div class="dancing__body-description">
@@ -145,7 +158,9 @@
                         <p>2 артиста<br>2 минуты</p>
                     </div>                    
                 </div>
+                </div>
             </div>
+        </section>
         </div>
         </section>
         <footer class="footer">

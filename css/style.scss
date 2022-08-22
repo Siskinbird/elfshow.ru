@@ -14,13 +14,12 @@ h2 {
     font-size: 42px;
     text-align: center;
     letter-spacing: 5px;
-    margin-bottom: 70px;
+    margin-bottom: 116px;
 }
 
 h3 {
     font-size: 36px;
-    margin-top: 28px;
-    margin-bottom: 12px;
+    margin: 0;
 }
 p {
     font-size: 30px;
@@ -183,6 +182,12 @@ $breakpoints: (
 
 /* CHARACTERS */
 
+.characters, .interactives, .dancings {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
 %card-body {
     margin-left: auto;
     margin-right: auto;
@@ -196,7 +201,7 @@ $breakpoints: (
     margin-bottom: 110px;
 }
 
-.characters__body {
+.character__body {
     @extend %card-body;
 }
 .interactive__body {
@@ -208,7 +213,7 @@ $breakpoints: (
 
 %card-img {
     position: absolute;
-    top: -26%;
+    top: -37%;
     left: 37%;
     z-index: 22;
     max-width: 290px;
@@ -278,6 +283,7 @@ $breakpoints: (
     display: flex;
     align-items: center;
     justify-content: flex-end;
+    background: linear-gradient(90deg, rgb(25, 1, 32), rgb(40, 82, 76));
 
 }
 /* .contacts {

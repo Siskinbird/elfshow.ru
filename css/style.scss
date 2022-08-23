@@ -245,17 +245,20 @@ p {
     top: -50%;
     left: 37%;
     z-index: 22;
-    max-width: 290px;
+    width: 290px;
+    height: auto;
     transition: all ease-in-out .4s;
     cursor: pointer;
     &:hover {
         transform: scale(110%);
     }
     @include for-tablet-landscape-up {
-        max-width: 225px
+        width: 225px;
+        height: auto;
     }
     @include medium {
-        max-width: 94px;
+        width: 94px;
+        height: auto;
         position: relative;
         top: 0;
         left: 0;
@@ -329,6 +332,7 @@ p {
 .whats-up {
     img {
         width: 228px;
+        height: auto;
         cursor: pointer;
     }
 }

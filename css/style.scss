@@ -67,14 +67,6 @@ p {
     }
 }
 
-/* $breakpoints: (
-  breakpoint-mobile: 360px,
-  breakpoint-tablet: 768px,
-  breakpoint-medium: 992px,
-  breakpoint-large: 1200px
-); */
-
-
 .wrapper{
     max-width: 100%;
     height: 100%;
@@ -89,19 +81,6 @@ p {
         padding: 10px;
     }
 }
-
-/* .main {
-    background: url('../assets/img/main_border.svg')  0 0/100% 100% no-repeat;
-} */
-
-/* .main-box {
-    //margin-top: 60px;
-
-    padding-bottom: 110px;
-   
-} */
-
-/* Header & Nav */
 
 .header {
     display: flex;
@@ -160,9 +139,6 @@ p {
         @include small {
             font-size: 16px;
         }
-/*         @include ex-small {
-            font-size: ;
-        } */
     }
 }
 
@@ -226,6 +202,7 @@ p {
     }
     @include for-phone-only {
         gap: 5px;
+        flex-direction: column
     }
 }
 
@@ -262,9 +239,11 @@ p {
         width: 94px;
         padding: 1px;
         height: auto;
-        position: relative;
-        top: 0;
-        left: 0;
+        position: static;
+
+    }
+    @include for-phone-only {
+        margin: 0 auto;
     }
 }
 
@@ -282,9 +261,11 @@ p {
 
 %card-description {
     flex-basis: 62%;
-    //flex: 65%;
     padding: 10px;
     border: 1px solid #d9d9d9;
+    @include for-phone-only {
+        text-align: center;
+    }
 }
 
 .character__body-description {
@@ -326,14 +307,57 @@ p {
 .footer {
     display: flex;
     align-items: center;
+
     justify-content: flex-end;
     background: linear-gradient(90deg, rgb(25, 1, 32), rgb(40, 82, 76));
     padding-bottom: 35px;
 }
-/* .contacts {
-} */
-.whats-up {
+
+.contacts {
+    display: flex;
+    gap: 30px;
+    align-items: center; 
+    padding: 20px 66px;
+    @include for-tablet-portrait-up {
+        flex-direction: column;
+        justify-content: center;
+        padding: 20px;
+    }   
+}
+
+.socials {
+    display: flex;
+    border: 1px solid #fff;
+    border-radius: 14px;
+    flex-wrap: wrap;
+    width: 110px;
+    height: 110px;
+    align-items: center;
+    justify-content: space-around;
+    padding: 5px;
     img {
         cursor: pointer;
+        padding: 5px;
+        filter: grayscale(80%);
+        transition: all ease-in-out .4s;
+        &:hover {
+            filter: grayscale(0);
+            border-radius: 50%;
+        }
     }
+}
+.disclamer {
+    display: flex;
+    flex: 30%;
+    flex-direction: column;
+    p {
+        font-size: 24px;
+        padding: 10px 0;
+        @include for-tablet-portrait-up {
+            text-align: center;            
+        } 
+    } 
+    span {
+        color: red;
+    }   
 }

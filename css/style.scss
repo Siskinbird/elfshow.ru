@@ -226,6 +226,7 @@ p {
     }
     @include for-phone-only {
         gap: 5px;
+        flex-direction: column
     }
 }
 
@@ -262,9 +263,11 @@ p {
         width: 94px;
         padding: 1px;
         height: auto;
-        position: relative;
-        top: 0;
-        left: 0;
+        position: static;
+
+    }
+    @include for-phone-only {
+        margin: 0 auto;
     }
 }
 
@@ -282,9 +285,11 @@ p {
 
 %card-description {
     flex-basis: 62%;
-    //flex: 65%;
     padding: 10px;
     border: 1px solid #d9d9d9;
+    @include for-phone-only {
+        text-align: center;
+    }
 }
 
 .character__body-description {

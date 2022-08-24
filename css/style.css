@@ -228,6 +228,7 @@ p {
 @media (max-width: 527px) {
   .dancing__body, .interactive__body, .character__body {
     gap: 5px;
+    flex-direction: column;
   }
 }
 
@@ -257,9 +258,12 @@ p {
     width: 94px;
     padding: 1px;
     height: auto;
-    position: relative;
-    top: 0;
-    left: 0;
+    position: static;
+  }
+}
+@media (max-width: 527px) {
+  .dancing-img, .elf-img, .driada-img {
+    margin: 0 auto;
   }
 }
 
@@ -267,6 +271,11 @@ p {
   flex-basis: 62%;
   padding: 10px;
   border: 1px solid #d9d9d9;
+}
+@media (max-width: 527px) {
+  .dancing__body-description, .interactive__body-description, .character__body-description {
+    text-align: center;
+  }
 }
 
 .dancing__body-timing, .interactive__body-timing, .character__body-timing {

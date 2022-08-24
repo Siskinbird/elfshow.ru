@@ -315,8 +315,6 @@ p {
 }
 .socials img {
   cursor: pointer;
-  /*         width: 45px;
-          height: 45px; */
   padding: 5px;
   filter: grayscale(80%);
   transition: all ease-in-out 0.4s;

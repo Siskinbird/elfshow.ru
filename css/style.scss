@@ -356,24 +356,14 @@ p {
     padding: 5px;
     img {
         cursor: pointer;
-        width: 45px;
-        height: 45px;
+/*         width: 45px;
+        height: 45px; */
         padding: 5px;
         filter: grayscale(80%);
-        -webkit-filter: grayscale(80%);
         transition: all ease-in-out .4s;
-        -webkit-transition: all ease-in-out .4s;
-        -moz-transition: all ease-in-out .4s;
-        -ms-transition: all ease-in-out .4s;
-        -o-transition: all ease-in-out .4s;
         &:hover {
             filter: grayscale(0);
-            -webkit-filter: grayscale(0);
             border-radius: 50%;
-            -webkit-border-radius: 50%;
-            -moz-border-radius: 50%;
-            -ms-border-radius: 50%;
-            -o-border-radius: 50%;
         }
     }
 }

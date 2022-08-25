@@ -151,7 +151,7 @@ p {
 }
 
 .video__media {
-  max-width: 100%;
+  width: 100%;
   height: auto;
   position: absolute;
   top: 0;
@@ -167,7 +167,7 @@ p {
 }
 .intro::after {
   content: "";
-  display: body;
+  display: block;
   background-color: rgba(0, 0, 0, 0.3);
   position: absolute;
   top: 0;

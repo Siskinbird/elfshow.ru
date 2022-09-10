@@ -1,5 +1,17 @@
 /* ROOTS */
 @import url('./normalize.css');
+@font-face {
+    font-family: 'futura-book';
+    src: url('../fonts/FUTURA_BOOK.TTF');
+}
+@font-face {
+    font-family: 'futura-book-italic';
+    src: url('../fonts/FUTURA_BOOK_ITALIC.TTF');
+}
+@font-face {
+    font-family: 'futura-light';
+    src: url('../fonts/FUTURA_BOOK_ITALIC.TTF');
+}
 
 @mixin ex-small {
     @media (max-width: 343px) { @content; }
@@ -33,6 +45,7 @@ html {
 
 body {
     font-family: 'Amatic SC', cursive;
+    //font-family: "futura-book", sans-serif;
     color: #fff;
 }
 h2 {

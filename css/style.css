@@ -1,5 +1,17 @@
 /* ROOTS */
 @import url("./normalize.css");
+@font-face {
+  font-family: "futura-book";
+  src: url("../fonts/FUTURA_BOOK.TTF");
+}
+@font-face {
+  font-family: "futura-book-italic";
+  src: url("../fonts/FUTURA_BOOK_ITALIC.TTF");
+}
+@font-face {
+  font-family: "futura-light";
+  src: url("../fonts/FUTURA_BOOK_ITALIC.TTF");
+}
 html {
   scroll-behavior: smooth;
 }

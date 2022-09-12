@@ -32,10 +32,10 @@
   @media (max-width: 930px) { @content; }
 }
 @mixin for-desktop-up {
-  @media (min-width: 1200px) { @content; }
+  @media (max-width: 1174px) { @content; }
 }
 @mixin for-big-desktop-up {
-  @media (min-width: 1800px) { @content; }
+  @media (max-width: 1800px) { @content; }
 }
 
 
@@ -44,23 +44,26 @@ html {
   }
 
 body {
-    font-family: 'Amatic SC', cursive;
-    //font-family: "futura-book", sans-serif;
+    //font-family: 'Amatic SC', cursive;
+    font-family: "futura-book", sans-serif;
     color: #fff;
 }
 h2 {
     text-transform: uppercase;
-    font-size: 42px;
+    font-size: 38px;
     text-align: center;
     letter-spacing: 5px;
     margin-bottom: 116px;
     @include medium {
         margin-bottom: 30px;
     }
+    @include for-phone-only {
+        font-size: 24px;
+    }
 }
 
 h3 {
-    font-size: 36px;
+    font-size: 26px;
     margin: 0;
     @include for-tablet-landscape-up {
         font-size: 24px;
@@ -70,13 +73,16 @@ h3 {
     }
 }
 p {
-    font-size: 30px;
+    font-size: 22px;
     margin: 0;
+    @include for-desktop-up {
+        font-size: 18px;
+    }
     @include for-tablet-landscape-up {
-        font-size: 20px;
+        font-size: 14px;
     }
     @include for-phone-only {
-        font-size: 16px;
+        font-size: 18px;
     }
 }
 
@@ -126,15 +132,15 @@ p {
     .link {
         margin-left: 40px;
         @include for-tablet-portrait-up {
-            margin-left: 20px;
+            margin-left: 10px;
         }
         @include small {
-            margin-left: 10px;
+            margin-left: 5px;
         }
     }
     .link a {
         text-decoration: none;
-        font-size: 42px;
+        font-size: 28px;
         color: #fff;
         text-transform: uppercase;
         border-bottom: 2px solid #fff;
@@ -144,13 +150,13 @@ p {
             border-bottom: 0px solid rgb(143, 36, 176);
         }
         @include for-tablet-landscape-up {
-            font-size: 32px;
+            font-size: 26px;
         }
         @include for-tablet-portrait-up {
-            font-size: 26px;          
+            font-size: 20px;          
         }
         @include small {
-            font-size: 16px;
+            font-size: 14px;
         }
     }
 }
@@ -263,6 +269,7 @@ p {
     }
     @include for-phone-only {
         margin: 0 auto;
+        width: 225px;
     }
 }
 

@@ -17,13 +17,13 @@ html {
 }
 
 body {
-  font-family: "Amatic SC", cursive;
+  font-family: "futura-book", sans-serif;
   color: #fff;
 }
 
 h2 {
   text-transform: uppercase;
-  font-size: 42px;
+  font-size: 38px;
   text-align: center;
   letter-spacing: 5px;
   margin-bottom: 116px;
@@ -33,9 +33,14 @@ h2 {
     margin-bottom: 30px;
   }
 }
+@media (max-width: 527px) {
+  h2 {
+    font-size: 24px;
+  }
+}
 
 h3 {
-  font-size: 36px;
+  font-size: 26px;
   margin: 0;
 }
 @media (max-width: 930px) {
@@ -50,17 +55,22 @@ h3 {
 }
 
 p {
-  font-size: 30px;
+  font-size: 22px;
   margin: 0;
+}
+@media (max-width: 1174px) {
+  p {
+    font-size: 18px;
+  }
 }
 @media (max-width: 930px) {
   p {
-    font-size: 20px;
+    font-size: 14px;
   }
 }
 @media (max-width: 527px) {
   p {
-    font-size: 16px;
+    font-size: 18px;
   }
 }
 
@@ -119,17 +129,17 @@ p {
 }
 @media (max-width: 780px) {
   .nav-links .link {
-    margin-left: 20px;
+    margin-left: 10px;
   }
 }
 @media (max-width: 577px) {
   .nav-links .link {
-    margin-left: 10px;
+    margin-left: 5px;
   }
 }
 .nav-links .link a {
   text-decoration: none;
-  font-size: 42px;
+  font-size: 28px;
   color: #fff;
   text-transform: uppercase;
   border-bottom: 2px solid #fff;
@@ -141,17 +151,17 @@ p {
 }
 @media (max-width: 930px) {
   .nav-links .link a {
-    font-size: 32px;
+    font-size: 26px;
   }
 }
 @media (max-width: 780px) {
   .nav-links .link a {
-    font-size: 26px;
+    font-size: 20px;
   }
 }
 @media (max-width: 577px) {
   .nav-links .link a {
-    font-size: 16px;
+    font-size: 14px;
   }
 }
 
@@ -260,6 +270,7 @@ p {
 @media (max-width: 527px) {
   .dancing-img, .elf-img, .driada-img {
     margin: 0 auto;
+    width: 225px;
   }
 }
 

@@ -4,14 +4,7 @@
   font-family: "futura-book";
   src: url("../fonts/FUTURA_BOOK.TTF");
 }
-/*@font-face {*/
-/*  font-family: "futura-book-italic";*/
-/*  src: url("../fonts/FUTURA_BOOK_ITALIC.TTF");*/
-/*}*/
-/*@font-face {*/
-/*  font-family: "futura-light";*/
-/*  src: url("../fonts/FUTURA_BOOK_ITALIC.TTF");*/
-/*}*/
+
 html {
   scroll-behavior: smooth;
 }
@@ -187,6 +180,7 @@ p {
   display: flex;
   flex-direction: column;
   text-align: center;
+  justify-content: center;
   position: absolute;
   top: 0;
   left: 0;
@@ -200,8 +194,9 @@ p {
 }
 
 .main__title {
-  margin: 0;
-  font-size: 60px;
+   margin: 0;
+  font-size: 80px;
+  font-family: 'Marck Script', cursive;
 }
 
 .video__media {
@@ -256,7 +251,7 @@ p {
   border: 3px solid #d9d9d9;
   justify-content: space-between;
   padding: 10px;
-  margin-bottom: 110px;
+  margin-bottom: 160px;
 }
 @media (max-width: 658px) {
   .dancing__body, .interactive__body, .character__body {
